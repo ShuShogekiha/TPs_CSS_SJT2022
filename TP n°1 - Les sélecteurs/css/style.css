@@ -1,0 +1,162 @@
+/* --- TABLES DES STYLE --- */
+/*                          */
+/*    CONTENUS GENERIQUES   */
+/*                          */
+/*          GLOBAL          */
+/*          NAVBAR          */
+/*          HEADER          */
+/*           MAIN           */
+/*         ARTICLES         */
+/*           FORM           */
+/*          FOOTER          */
+/*                          */
+/* ------------------------ */
+
+
+
+/*          GLOBAL          */
+body {
+    margin: 0;
+    background-color: #F6F6F6;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #359E7B;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h3{
+    margin-bottom: 15px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+
+}
+
+h1,h2 {
+    text-align: center;
+    margin: 50px auto;
+}
+
+h2,h3 {
+    color: #006083;
+}
+
+main,h1{
+    max-width: 1150px;
+    margin: 20px auto;
+}
+
+/*          NAVBAR          */
+
+
+nav{
+    background-color: #359E7B;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 40px;
+}
+
+nav ul{
+    width: 1150px; 
+}
+
+nav li, nav a{
+    float: right;
+    color: #F6F6F6;
+    display: inline-block;
+    padding: 7px;
+    transition: background-color 2s ease-in-out; 
+}
+
+nav li:hover{  
+    background-color: rgb(30, 39, 61);
+
+}
+
+header p{
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/*         ARTICLES         */
+
+
+article p.dateTime {
+    color: grey;
+    font-weight: bold;
+}
+
+article a{
+    display: block;
+    color: #359E7B;
+    width: fit-content;
+    margin-left: auto;
+}
+
+a.moreAndMore {
+    display: block;
+    background-color: #359E7B;
+    max-width: 250px;
+    color: #FFFFFF;
+    padding: 15px;
+    margin: 40px auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/*          FORM         */
+
+form {
+    width: 700px;
+    margin: 0 auto;
+}
+
+
+input {
+    text-size-adjust: 25px;
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: solid 2px #359E7B;
+}
+
+textarea {
+    resize: none;
+    height: 300px;
+    width: 700px;
+    border: solid 2px #359E7B;
+    box-sizing: border-box;
+}
+
+input.envoi {
+    background-color: #359E7B;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/*          FOOTER          */
+
+footer {
+    background-color: darkgray;
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer a, footer a:visited{
+    color: #FFFFFF;
+}
