@@ -229,12 +229,12 @@ footer{
     main .inline-blocks-container:last-of-type{
         flex-direction: column;
     }
-    main .inline-scnd{
+    main .inline-scnd-container .inline-scnd{
         width: 100%;
         margin: 1.25rem;
     }
     main .inline-blocks-container .inline-scnd:first-of-type p{
-        margin: 0;
+        margin: 1.25rem 0 ;
     }
     main .inline-blocks-container .inline-scnd:last-of-type p{
         margin-left: 0;
