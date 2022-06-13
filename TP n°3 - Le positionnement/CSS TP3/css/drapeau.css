@@ -1,5 +1,3 @@
-/* ---   BODY   ---- */
-
 body {
   margin: 2rem;
   font: 1em sans-serif;
@@ -13,40 +11,20 @@ body div {
   margin: 1em;
 }
 
-
-/* ---   base des drapeaux   ---- */
-
-div:first-of-type::before, 
-div:first-of-type::after, 
-div:nth-of-type(2)::before, 
-div:nth-of-type(2)::after, 
-div:nth-of-type(3)::before, 
-div:nth-of-type(4)::before, 
-div:nth-of-type(4)::after, 
-div:nth-of-type(5)::before, 
-div:nth-of-type(5)::after {
+div:first-of-type::before, div:first-of-type::after, div:nth-of-type(2)::before, div:nth-of-type(2)::after, div:nth-of-type(3)::before, div:nth-of-type(4)::before, div:nth-of-type(4)::after, div:nth-of-type(5)::before, div:nth-of-type(5)::after {
   content: "";
   position: absolute;
 }
-
-
-/* ---   forme de trait vertical sans gradient   ---- */
 
 div:first-of-type::before, div:first-of-type::after {
   width: 33%;
   height: 100%;
 }
 
-
-/* ---   forme de trait vertical sans gradient   ---- */
-
 div:nth-of-type(2)::before, div:nth-of-type(2)::after {
   width: 100%;
   height: 33%;
 }
-
-
-/* ---   moyen de centralisation   ---- */
 
 div:nth-of-type(3)::before, div:nth-of-type(4)::before, div:nth-of-type(4)::after {
   top: 50%;
@@ -54,9 +32,6 @@ div:nth-of-type(3)::before, div:nth-of-type(4)::before, div:nth-of-type(4)::afte
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-
-
-/* ---   France   ---- */
 
 div:first-of-type {
   background-color: white;
@@ -73,9 +48,6 @@ div:first-of-type::after {
   right: 0;
 }
 
-
-/* ---   Allemagne   ---- */
-
 div:nth-of-type(2) {
   background-color: red;
 }
@@ -90,9 +62,6 @@ div:nth-of-type(2)::after {
   bottom: 0;
 }
 
-
-/* ---   Japon   ---- */
-
 div:nth-of-type(3) {
   background-color: white;
 }
@@ -104,16 +73,13 @@ div:nth-of-type(3)::before {
   border-radius: 100%;
 }
 
-
-/* ---   Suisse   ---- */
-
 div:nth-of-type(4) {
   background-color: red;
 }
 
 div:nth-of-type(4)::before {
   background-color: white;
-  width: 66%;
+  width: 57%;
   height: 16%;
 }
 
@@ -122,9 +88,6 @@ div:nth-of-type(4)::after {
   width: 12%;
   height: 66%;
 }
-
-
-/* ---   Norvège   ---- */
 
 div:nth-of-type(5) {
   background: red;
