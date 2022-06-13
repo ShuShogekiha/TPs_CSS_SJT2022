@@ -1,0 +1,131 @@
+body {
+    margin: 2rem;
+    font: 1em sans-serif;
+
+    div {
+        position: relative;
+        width: 450px;
+        height: 300px;
+        border: solid black 2px;
+        margin: 1em;
+    }
+}
+
+%base {
+    content: "";
+    position: absolute;
+}
+
+%france {
+    width: 33%;
+    height: 100%;
+}
+
+%allemagne {
+    width: 100%;
+    height: 33%;
+}
+
+%suisse {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div:first-of-type {
+    background-color: white;
+
+    &::before {
+        @extend %base, %france;
+        background-color: blue;
+        left: 0;
+        z-index: 2;
+    }
+
+    &::after {
+        @extend %base, %france;
+        background-color: red;
+        right: 0;
+    }
+}
+
+div:nth-of-type(2) {
+    background-color: red;
+
+    &::before {
+        @extend %base, %allemagne;
+        background-color: black;
+        top: 0;
+    }
+
+    &::after {
+        @extend %base, %allemagne;
+        background-color: yellow;
+        bottom: 0;
+    }
+}
+
+div:nth-of-type(3) {
+    background-color: white;
+
+    &::before {
+        @extend %base, %suisse;
+        background-color: red;
+        height: 45%;
+        width: 30%;
+        border-radius: 100%;
+    }
+}
+
+div:nth-of-type(4) {
+    background-color: red;
+
+    &::before {
+        @extend %base, %suisse;
+        background-color: white;
+        width: 66%;
+        height: 16%;
+    }
+
+    &::after {
+        @extend %base, %suisse;
+        background-color: white;
+        width: 12%;
+        height: 66%;
+    }
+}
+
+div:nth-of-type(5) {
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 26%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 40%);
+
+    &::before {
+        @extend %base;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 15%, rgba(0,0,255,1) 15%, rgba(0,0,255,1) 85%, rgba(255,255,255,1) 85%);
+        height: 28%;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::after {
+        @extend %base;
+        background: blue;
+ /*        background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(0,0,255,1) 15%, rgba(0,0,255,1) 85%, rgba(255,255,255,1) 85%); */
+        height: 100%;
+        width: 18%;
+        top: 50%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+/* div:last-of-type {
+    background: linear-gradient(to right, green 33.33%, red 33.33% 66.66%, yellow 66.66% 100%);
+}
+ */
+
+/* OHJISHFGY97UIZTFRZB Y976ADRT67Z EF9G  */

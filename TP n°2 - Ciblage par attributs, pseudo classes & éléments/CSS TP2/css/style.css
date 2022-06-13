@@ -105,7 +105,7 @@ li a {
     color: #FFFFFF;
     padding: auto 50px;
     text-decoration: none;
-    transition: background-color 0.5s ease-in-out, width 2s ease-in-out;
+    transition: background-color 0.5s ease-in-out/* , width 2s ease-in-out */;
     place-items: center;
 }
 
@@ -132,7 +132,7 @@ li:last-of-type a {
 
 li a:hover {
     background-color: #B318FF;
-    width: 800px;
+/*     width: 800px; */
 }
 
 /*           MAIN           */

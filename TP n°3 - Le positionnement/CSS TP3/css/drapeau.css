@@ -1,0 +1,163 @@
+/* ---   BODY   ---- */
+
+body {
+  margin: 2rem;
+  font: 1em sans-serif;
+}
+
+body div {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  border: solid black 2px;
+  margin: 1em;
+}
+
+
+/* ---   base des drapeaux   ---- */
+
+div:first-of-type::before, 
+div:first-of-type::after, 
+div:nth-of-type(2)::before, 
+div:nth-of-type(2)::after, 
+div:nth-of-type(3)::before, 
+div:nth-of-type(4)::before, 
+div:nth-of-type(4)::after, 
+div:nth-of-type(5)::before, 
+div:nth-of-type(5)::after {
+  content: "";
+  position: absolute;
+}
+
+
+/* ---   forme de trait vertical sans gradient   ---- */
+
+div:first-of-type::before, div:first-of-type::after {
+  width: 33%;
+  height: 100%;
+}
+
+
+/* ---   forme de trait vertical sans gradient   ---- */
+
+div:nth-of-type(2)::before, div:nth-of-type(2)::after {
+  width: 100%;
+  height: 33%;
+}
+
+
+/* ---   moyen de centralisation   ---- */
+
+div:nth-of-type(3)::before, div:nth-of-type(4)::before, div:nth-of-type(4)::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+
+/* ---   France   ---- */
+
+div:first-of-type {
+  background-color: white;
+}
+
+div:first-of-type::before {
+  background-color: blue;
+  left: 0;
+  z-index: 2;
+}
+
+div:first-of-type::after {
+  background-color: red;
+  right: 0;
+}
+
+
+/* ---   Allemagne   ---- */
+
+div:nth-of-type(2) {
+  background-color: red;
+}
+
+div:nth-of-type(2)::before {
+  background-color: black;
+  top: 0;
+}
+
+div:nth-of-type(2)::after {
+  background-color: yellow;
+  bottom: 0;
+}
+
+
+/* ---   Japon   ---- */
+
+div:nth-of-type(3) {
+  background-color: white;
+}
+
+div:nth-of-type(3)::before {
+  background-color: red;
+  height: 45%;
+  width: 30%;
+  border-radius: 100%;
+}
+
+
+/* ---   Suisse   ---- */
+
+div:nth-of-type(4) {
+  background-color: red;
+}
+
+div:nth-of-type(4)::before {
+  background-color: white;
+  width: 66%;
+  height: 16%;
+}
+
+div:nth-of-type(4)::after {
+  background-color: white;
+  width: 12%;
+  height: 66%;
+}
+
+
+/* ---   Norvège   ---- */
+
+div:nth-of-type(5) {
+  background: red;
+  background: -webkit-gradient(linear, left top, right top, color-stop(26%, red), color-stop(20%, white), color-stop(50%, white), color-stop(40%, red));
+  background: linear-gradient(90deg, red 26%, white 20%, white 50%, red 40%);
+}
+
+div:nth-of-type(5)::before {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, white), color-stop(15%, blue), color-stop(85%, blue), color-stop(85%, white));
+  background: linear-gradient(180deg, white 15%, blue 15%, blue 85%, white 85%);
+  height: 28%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div:nth-of-type(5)::after {
+  background: blue;
+  /*        background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(0,0,255,1) 15%, rgba(0,0,255,1) 85%, rgba(255,255,255,1) 85%); */
+  height: 100%;
+  width: 18%;
+  top: 50%;
+  left: 38%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* div:last-of-type {
+    background: linear-gradient(to right, green 33.33%, red 33.33% 66.66%, yellow 66.66% 100%);
+}
+ */
+/* OHJISHFGY97UIZTFRZB Y976ADRT67Z EF9G  */
+/*# sourceMappingURL=drapeau.css.map */
