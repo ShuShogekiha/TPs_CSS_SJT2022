@@ -231,7 +231,7 @@ footer{
     }
     main .inline-scnd-container .inline-scnd{
         width: 100%;
-        margin: 1.25rem;
+        margin: none;
     }
     main .inline-blocks-container .inline-scnd:first-of-type p{
         margin: 1.25rem 0 ;
@@ -241,6 +241,9 @@ footer{
     }
     main .inline-blocks-container .inline-scnd:last-of-type h3{
         margin-left: 0;        
+    }
+    *{
+        padding: 5px;
     }
 
 }
